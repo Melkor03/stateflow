@@ -209,9 +209,9 @@ const calculateRecommendations = (answers) => {
     scores['zustand'] += 15;
     scores['jotai'] += 10;
   } else if (answers.primaryUse === 'api-data') {
-    scores['react-query'] += 35;
-    scores['redux-toolkit'] += 20;
-    scores['zustand'] += 15;
+    scores['react-query'] += 50;  // Increased from 35 to 50
+    scores['redux-toolkit'] += 15; // Reduced from 20 to 15
+    scores['zustand'] += 10;       // Reduced from 15 to 10
   } else if (answers.primaryUse === 'real-time') {
     scores['redux-toolkit'] += 25;
     scores['zustand'] += 20;
